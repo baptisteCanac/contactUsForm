@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="cardContainer">
+			<div class="helloWorldTitleContainer">Hello World</div>
+			<form>
+				<input type="text" name="name" placeholder="name"><br>
+				<input type="text" name="mail" placeholder="Your Email"><br>
+				<input type="text" name="mail" placeholder="Reason for contact"><br>
+				<input type="number" name="mail" placeholder="Phone no" id="phoneInput">
+				<input type="text" name="mail" placeholder="Email" id="mailInput"><br>
+				<input type="text" name="mail" placeholder="Message"><br>
+				<input type="submit" name="submitContact" value="send message">
+			</form>
+			<div class="rigthCanvas">
+				<div class="weListenTo">We Listen To</div>
+				<div class="you">You</div>
+				<div class="preferdCommunicationMethodContainer">
+					<div class="preferdCommunicationMethod">Preferd communication method</div>
+					<input type="radio" name="phone" class="phoneRadio" id="phone" checked onclick="check()">
+					<label class="infoRadio">Phone</label><br><br>
+					<input type="radio" name="phone" class="mailRadio" id="phone" onclick="check()">
+					<label class="infoRadio">Email</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let phoneInput = "#phoneInput";
+		let mailInput = "#mailInput";
+		$("#mailInput").hide();
+		function check(){
+			if ($("#phone").is(":checked")) {
+				$(phoneInput).show();
+				$(mailInput).hide();
+				$(phoneInput).val("");
+			}else{
+				$(phoneInput).hide();
+				$(mailInput).show();
+				$(mailInput).val("");
+			}
+		}
+	</script>
+</body>
+</html>

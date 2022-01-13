@@ -1,0 +1,112 @@
+body{
+	font-family: "Poppins", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+@media (max-width: 1440px){
+	/* for phone */
+	body{
+		background: red;
+	}
+}
+@media (min-width: 1000px){
+	/* for desktop */
+	#app{
+		display: flex;
+		justify-content: center;
+	}
+	.cardContainer{
+		width: 1000px;
+		height: 750px;
+		background: #0B0F1B;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 50px;
+	}
+	.helloWorldTitleContainer{
+		padding-left: 5%;
+		padding-top: 33px;
+		width: 322px;
+		height: 64px;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 72px;
+		color: #fff;
+	}
+	input[type="text"], input[type="number"]{
+		width: 280px;
+		border: 1px solid #FFFFFF;
+		outline: none;
+		background: transparent;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		margin-left: 5%;
+		margin-top: 60px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 27px;
+	}
+	input::placeholder{
+		color: #606772;
+		font-size: 18px;
+		line-height: 27px;
+	}
+	input[type="submit"]{
+		text-transform: uppercase;
+		background: #4CCD6E;
+		border-radius: 50px;
+		margin-left: 5%;
+		margin-top: 60px;
+		border: 2px solid transparent;
+		cursor: pointer;
+		width: 201px;
+		height: 35px;
+		color: #fff;
+		transition-duration: 0.5s;
+	}
+	input[type="submit"]:hover{
+		background: #d83663;
+		transition-duration: 0.5s;
+	}
+	.rigthCanvas{
+		position: absolute;
+		width: 450px;
+		background: red;
+		height: 750px;
+		left: 52%;
+		top: 0%;
+		background: #0F1F3D;
+		border-radius: 0px 50px 50px 0px;
+	}
+	.weListenTo{
+		font-size: 48px;
+		line-height: 72px;
+		color: #385480;
+		margin-top: 127px;
+		padding-left: 5%;
+	}
+	.you{
+		font-size: 70px;
+		line-height: 72px;
+		color: #5C80B7;
+		padding-left: 5%;
+	}
+	.preferdCommunicationMethod{
+		padding-left: 5%;
+		color: #385480;
+		font-size: 20px;
+		line-height: 21px;
+		margin-top: 170px;
+	}
+	input[type="radio"]{
+    	margin-left: 5%;
+    	font-size: 20px;
+    	height: 30px;
+    	width: 30px;
+    	cursor: pointer;
+	}
+	.infoRadio{
+		color: #fff;
+	}
+}
+/* 27.8 */
